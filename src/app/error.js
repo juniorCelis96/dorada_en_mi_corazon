@@ -6,7 +6,11 @@ import { AlertCircle, Home } from 'lucide-react'
 
 export default function Error ({ error, reset }) {
   useEffect(() => {
-    console.error(error)
+    // Log error for debugging
+    if (error) {
+      // eslint-disable-next-line no-console
+      console.error(error)
+    }
   }, [error])
 
   return (

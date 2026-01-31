@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useMemo } from 'react'
+import { useMemo } from 'react'
 import { TourismSection } from '@/components/TourismSection'
 import { SearchBar } from '@/components/SearchBar'
 import { FilterPanel } from '@/components/FilterPanel'
@@ -56,13 +56,15 @@ export default function TurismoPage () {
           </div>
         </div>
 
-        {filteredItems.length > 0 ? (
-          <TourismSection items={filteredItems} />
-        ) : (
-          <div className='py-12 text-center'>
-            <p className='text-gray-500'>No se encontraron resultados para tu búsqueda.</p>
-          </div>
-        )}
+        {filteredItems.length > 0
+          ? (
+              <TourismSection items={filteredItems} />
+            )
+          : (
+              <div className='py-12 text-center'>
+                <p className='text-gray-500'>No se encontraron resultados para tu búsqueda.</p>
+              </div>
+            )}
       </div>
     </div>
   )

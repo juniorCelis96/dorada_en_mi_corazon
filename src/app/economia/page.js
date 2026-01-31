@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useMemo } from 'react'
+import { useMemo } from 'react'
 import { SearchBar } from '@/components/SearchBar'
 import { FilterPanel } from '@/components/FilterPanel'
 import { getAllEconomy } from '@/data/economyData'
@@ -96,12 +96,13 @@ export default function EconomiaPage () {
                 </div>
               </div>
             ))}
-          </div>
-        ) : (
-          <div className='py-12 text-center'>
-            <p className='text-gray-500'>No se encontraron resultados para tu búsqueda.</p>
-          </div>
-        )}
+              </div>
+            )
+          : (
+              <div className='py-12 text-center'>
+                <p className='text-gray-500'>No se encontraron resultados para tu búsqueda.</p>
+              </div>
+            )}
       </div>
     </div>
   )
