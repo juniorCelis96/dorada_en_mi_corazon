@@ -19,7 +19,8 @@ export async function generateStaticParams () {
 }
 
 export async function generateMetadata ({ params }) {
-  const municipio = getMunicipioBySlug(params.slug)
+  const { slug } = await params
+  const municipio = getMunicipioBySlug(slug)
   if (!municipio) {
     return {
       title: 'Municipio no encontrado'
@@ -31,17 +32,18 @@ export async function generateMetadata ({ params }) {
   }
 }
 
-export default function MunicipioPage ({ params }) {
-  const municipio = getMunicipioBySlug(params.slug)
+export default async function MunicipioPage ({ params }) {
+  const { slug } = await params
+  const municipio = getMunicipioBySlug(slug)
 
   if (!municipio) {
     notFound()
   }
 
-  const turismo = getTourismByMunicipio(params.slug)
-  const gastronomia = getGastronomyByMunicipio(params.slug)
-  const cultura = getCultureByMunicipio(params.slug)
-  const economia = getEconomyByMunicipio(params.slug)
+  const turismo = getTourismByMunicipio(slug)
+  const gastronomia = getGastronomyByMunicipio(slug)
+  const cultura = getCultureByMunicipio(slug)
+  const economia = getEconomyByMunicipio(slug)
 
   return (
     <div className='min-h-screen bg-white'>
@@ -124,7 +126,7 @@ export default function MunicipioPage ({ params }) {
         <section className='py-12 bg-gray-50'>
           <div className='container mx-auto px-4'>
             <h2 className='mb-6 text-2xl font-bold text-gray-900'>Atractivos Turísticos</h2>
-            <TourismSection items={turismo} municipio={params.slug} />
+            <TourismSection items={turismo} municipio={slug} />
           </div>
         </section>
       )}
@@ -134,7 +136,7 @@ export default function MunicipioPage ({ params }) {
         <section className='py-12'>
           <div className='container mx-auto px-4'>
             <h2 className='mb-6 text-2xl font-bold text-gray-900'>Gastronomía</h2>
-            <GastronomySection items={gastronomia} municipio={params.slug} />
+            <GastronomySection items={gastronomia} municipio={slug} />
           </div>
         </section>
       )}
@@ -144,7 +146,7 @@ export default function MunicipioPage ({ params }) {
         <section className='py-12 bg-gray-50'>
           <div className='container mx-auto px-4'>
             <h2 className='mb-6 text-2xl font-bold text-gray-900'>Cultura y Eventos</h2>
-            <CultureSection items={cultura} municipio={params.slug} />
+            <CultureSection items={cultura} municipio={slug} />
           </div>
         </section>
       )}
