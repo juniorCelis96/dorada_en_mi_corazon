@@ -27,7 +27,7 @@ export async function generateMetadata ({ params }) {
     }
   }
   return {
-    title: `${municipio.nombre} - La Dorada en Mi Corazón`,
+    title: `${municipio.nombre} - Senderos sin límites`,
     description: municipio.descripcion
   }
 }

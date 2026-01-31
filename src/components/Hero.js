@@ -12,9 +12,11 @@ export function Hero () {
             <span className='text-sm font-medium text-white'>Caldas, Colombia</span>
           </div>
           <h1 className='mb-6 text-4xl font-bold text-white md:text-6xl'>
-            Descubre la Magia de{' '}
-            <span className='text-warm-200'>La Dorada</span> y sus Alrededores
+            <span className='text-warm-200'>Senderos sin límites</span>
           </h1>
+          <h2 className='mb-6 text-2xl font-semibold text-white md:text-3xl'>
+            Descubre la Magia de Caldas
+          </h2>
           <p className='mb-8 text-xl text-white/90 md:text-2xl'>
             Explora la riqueza turística, gastronómica, cultural y económica de los municipios de Caldas
           </p>

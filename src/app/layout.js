@@ -6,11 +6,11 @@ import { Footer } from '@/components/Footer'
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
 export const metadata = {
-  title: 'La Dorada en Mi Corazón - Turismo, Gastronomía y Cultura de Caldas',
+  title: 'Senderos sin límites - Turismo, Gastronomía y Cultura de Caldas',
   description: 'Descubre los atractivos turísticos, la gastronomía, la cultura y la economía de La Dorada, Norcasia, Victoria y Samaná en Caldas, Colombia.',
   keywords: 'La Dorada, Caldas, turismo, gastronomía, cultura, Norcasia, Victoria, Samaná',
   openGraph: {
-    title: 'La Dorada en Mi Corazón',
+    title: 'Senderos sin límites',
     description: 'Plataforma de promoción turística de los municipios de Caldas',
     type: 'website'
   }

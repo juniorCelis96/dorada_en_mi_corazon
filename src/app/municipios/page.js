@@ -2,7 +2,7 @@ import { MunicipiosGrid } from '@/components/MunicipiosGrid'
 import { getAllMunicipios } from '@/data/municipiosData'
 
 export const metadata = {
-  title: 'Municipios - La Dorada en Mi Corazón',
+  title: 'Municipios - Senderos sin límites',
   description: 'Descubre todos los municipios de Caldas disponibles en nuestra plataforma'
 }
 

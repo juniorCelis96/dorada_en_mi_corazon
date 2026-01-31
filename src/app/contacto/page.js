@@ -2,7 +2,7 @@ import { ContactForm } from '@/components/ContactForm'
 import { Mail, Phone, MapPin, Clock } from 'lucide-react'
 
 export const metadata = {
-  title: 'Contacto - La Dorada en Mi Corazón',
+  title: 'Contacto - Senderos sin límites',
   description: 'Contáctanos para más información sobre turismo, gastronomía, cultura y economía de Caldas'
 }
 
@@ -35,10 +35,10 @@ export default function ContactoPage () {
                     <div>
                       <h3 className='font-semibold text-gray-900'>Email</h3>
                       <a
-                        href='mailto:contacto@doradaenmicorazon.com'
+                        href='mailto:contacto@senderossinlimites.com'
                         className='text-gray-600 hover:text-primary-600'
                       >
-                        contacto@doradaenmicorazon.com
+                        contacto@senderossinlimites.com
                       </a>
                     </div>
                   </div>
@@ -82,7 +82,7 @@ export default function ContactoPage () {
                   Si tienes un negocio, restaurante o servicio turístico en la región, contáctanos para ser parte de nuestra plataforma.
                 </p>
                 <a
-                  href='mailto:empresas@doradaenmicorazon.com'
+                  href='mailto:empresas@senderossinlimites.com'
                   className='inline-block rounded-lg bg-white px-6 py-2 font-semibold text-primary-600 transition-colors hover:bg-gray-100'
                 >
                   Contactar para Empresas

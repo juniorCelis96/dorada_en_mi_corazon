@@ -1,4 +1,4 @@
-# La Dorada en Mi Corazón
+# Senderos sin límites
 
 Plataforma web de promoción turística, gastronómica, cultural y económica de los municipios de Caldas, Colombia.
 
@@ -22,7 +22,7 @@ Plataforma web de promoción turística, gastronómica, cultural y económica de los
 1. Clona el repositorio:
 ```bash
 git clone <repository-url>
-cd web_dorada_en_mi_corazon
+cd senderos-sin-limites
 ```
 
 2. Instala las dependencias:

@@ -8,7 +8,7 @@ export function Footer () {
         <div className='grid grid-cols-1 gap-8 md:grid-cols-4'>
           {/* About */}
           <div>
-            <h3 className='mb-4 text-lg font-semibold text-white'>La Dorada en Mi Corazón</h3>
+            <h3 className='mb-4 text-lg font-semibold text-white'>Senderos sin límites</h3>
             <p className='text-sm'>
               Plataforma de promoción turística, gastronómica, cultural y económica de los municipios de Caldas, Colombia.
             </p>
@@ -74,8 +74,8 @@ export function Footer () {
             <ul className='space-y-2 text-sm'>
               <li className='flex items-center space-x-2'>
                 <Mail className='h-4 w-4' />
-                <a href='mailto:contacto@doradaenmicorazon.com' className='hover:text-primary-400'>
-                  contacto@doradaenmicorazon.com
+                <a href='mailto:contacto@senderossinlimites.com' className='hover:text-primary-400'>
+                  contacto@senderossinlimites.com
                 </a>
               </li>
               <li className='flex items-center space-x-2'>
@@ -98,7 +98,7 @@ export function Footer () {
         </div>
 
         <div className='mt-8 border-t border-gray-800 pt-8 text-center text-sm'>
-          <p>&copy; {new Date().getFullYear()} La Dorada en Mi Corazón. Todos los derechos reservados.</p>
+          <p>&copy; {new Date().getFullYear()} Senderos sin límites. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>
