@@ -1,0 +1,61 @@
+# Reglas del Proyecto - Next.js Transvial
+
+## Estilo de Código
+
+- Usar Standard.js como linter
+- 2 espacios para indentación
+- Sin punto y coma al final de las líneas
+- Comillas simples para strings
+- Preferir const sobre let, evitar var
+
+## Estructura de Componentes
+
+- Componentes funcionales con named exports
+- Preferir Server Components sobre Client Components
+- Usar 'use client' solo cuando sea necesario (hooks, eventos, estado)
+- Organizar componentes en `src/components/`
+
+## Estilos
+
+- Usar Tailwind CSS para utilidades comunes
+- Usar Stylus modules (`.module.styl`) para estilos complejos específicos del componente
+- Preferir clases de Tailwind sobre CSS custom cuando sea posible
+- Mantener estilos co-locados con componentes cuando sea apropiado
+
+## Estructura de Carpetas
+
+- Componentes en `src/components/`
+- Datos estáticos en `src/data/`
+- Utilidades en `src/lib/`
+- Páginas en `src/app/` (App Router)
+
+## Convenciones de Nombres
+
+- Componentes: PascalCase (ej: `MunicipioCard.js`)
+- Archivos de datos: camelCase con sufijo Data (ej: `municipiosData.js`)
+- Utilidades: camelCase (ej: `utils.js`)
+- Rutas: kebab-case (ej: `/municipios/la-dorada`)
+
+## Estado Global
+
+- Usar Zustand para estado global compartido
+- Preferir estado local (useState) cuando sea posible
+- Evitar prop drilling excesivo
+
+## Formularios
+
+- Usar React Hook Form para manejo de formularios
+- Validación con Zod
+- Usar @hookform/resolvers para integrar Zod con React Hook Form
+
+## Imágenes
+
+- Usar Next.js Image component para optimización
+- Proporcionar alt text descriptivo
+- Usar tamaños apropiados con sizes prop
+
+## SEO
+
+- Incluir metadata en cada página
+- Usar generateMetadata para páginas dinámicas
+- Incluir Open Graph tags cuando sea apropiado
