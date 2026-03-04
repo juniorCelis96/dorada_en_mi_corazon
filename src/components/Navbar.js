@@ -1,8 +1,9 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { useState } from 'react'
-import { Menu, X, MapPin } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
 export function Navbar () {
@@ -22,9 +23,25 @@ export function Navbar () {
     <nav className='sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60'>
       <div className='container mx-auto px-4'>
         <div className='flex h-16 items-center justify-between'>
-          <Link href='/' className='flex items-center space-x-2'>
-            <MapPin className='h-6 w-6 text-primary-600' />
-            <span className='text-xl font-bold text-gray-900'>Senderos sin límites</span>
+          <Link href='/' className='flex items-center space-x-3'>
+            <Image
+              src='/logo-ssl.PNG'
+              alt='Senderos sin límites'
+              width={50}
+              height={50}
+              className='h-12 w-auto object-contain'
+              style={{ backgroundColor: 'transparent' }}
+              priority
+            />
+            <Image
+              src='/logo-ssl-fuente.PNG'
+              alt='Senderos sin límites'
+              width={180}
+              height={35}
+              className='h-9 w-auto object-contain'
+              style={{ backgroundColor: 'transparent' }}
+              priority
+            />
           </Link>
 
           {/* Desktop Navigation */}

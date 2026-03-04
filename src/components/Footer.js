@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { MapPin, Mail, Facebook, Instagram, Twitter } from 'lucide-react'
 
 export function Footer () {
@@ -8,7 +9,17 @@ export function Footer () {
         <div className='grid grid-cols-1 gap-8 md:grid-cols-4'>
           {/* About */}
           <div>
-            <h3 className='mb-4 text-lg font-semibold text-white'>Senderos sin límites</h3>
+            <Link href='/' className='mb-4 flex flex-col items-center'>
+              <Image
+                src='/logo-transparente.PNG'
+                alt='Senderos sin límites'
+                width={80}
+                height={80}
+                className='mb-3 h-20 w-auto object-contain'
+                style={{ backgroundColor: 'transparent' }}
+              />
+              <h3 className='text-lg font-semibold text-white'>Senderos sin límites</h3>
+            </Link>
             <p className='text-sm'>
               Plataforma de promoción turística, gastronómica, cultural y económica de los municipios de Caldas, Colombia.
             </p>
